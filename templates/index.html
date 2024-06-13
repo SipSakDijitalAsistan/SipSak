@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        #chat-container {
+            width: 400px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        #messages {
+            height: 300px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #user-input {
+            display: flex;
+        }
+        #user-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #user-input button {
+            padding: 10px 15px;
+            border: none;
+            background: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #user-input button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="messages"></div>
+        <div id="user-input">
+            <input type="text" id="message" placeholder="Mesajınızı yazın...">
+            <button onclick="sendMessage()">Gönder</button>
+        </div>
+    </div>
+    <script>
+        function sendMessage() {
+            const message = document.getElementById('message').value;
+            document.getElementById('message').value = '';
+            const messagesDiv = document.getElementById('messages');
+            const userMessageDiv = document.createElement('div');
+            userMessageDiv.textContent = 'Siz: ' + message;
+            messagesDiv.appendChild(userMessageDiv);
+            
+            fetch('/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: message })
+            })
+            .then(response => response.json())
+            .then(data => {
+                const botMessageDiv = document.createElement('div');
+                botMessageDiv.textContent = 'ŞipŞak: ' + data.response;
+                messagesDiv.appendChild(botMessageDiv);
+                messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Merhaba",
+        "Selam",
+        "Nasılsın",
+        "Orada mısın?",
+        "İyi günler"
+      ],
+      "responses": [
+        "Merhaba! Size nasıl yardımcı olabilirim?",
+        "Selam! Bugün size nasıl yardımcı olabilirim?",
+        "Merhaba, hoş geldiniz. Size nasıl yardımcı olabilirim?",
+        "Selamlar! Yardımcı olabileceğim bir konu var mı?"
+      ]
+    },
+    {
+      "tag": "data_plans",
+      "patterns": [
+        "İnternet paketleri",
+        "Veri paketleri",
+        "Hangi internet paketleriniz var?",
+        "Veri planları hakkında bilgi verir misiniz?"
+      ],
+      "responses": [
+        "Güncel internet paketlerimiz arasında 10 GB, 20 GB ve limitsiz seçenekler bulunmaktadır. Detaylı bilgi için web sitemizi ziyaret edebilirsiniz.",
+        "Veri paketlerimiz hakkında bilgi almak için web sitemizi ziyaret edebilirsiniz. Farklı ihtiyaçlara uygun çeşitli paketlerimiz mevcuttur."
+      ]
+    },
+    {
+      "tag": "customer_support",
+      "patterns": [
+        "Müşteri hizmetleri",
+        "Destek",
+        "Müşteri hizmetleriyle nasıl iletişime geçebilirim?",
+        "Destek almak istiyorum"
+      ],
+      "responses": [
+        "Müşteri hizmetlerimize 444 0 375 numaralı telefondan ulaşabilirsiniz. Ayrıca web sitemizdeki destek bölümünden de yardım alabilirsiniz.",
+        "Destek ekibimizle iletişime geçmek için 444 0 375 numaralı telefonu arayabilirsiniz. Alternatif olarak web sitemizdeki canlı destek bölümünü kullanabilirsiniz."
+      ]
+    },
+    {
+      "tag": "billing",
+      "patterns": [
+        "Fatura",
+        "Fatura sorgulama",
+        "Faturamı nasıl sorgulayabilirim?",
+        "Faturamı görmek istiyorum"
+      ],
+      "responses": [
+        "Faturanızı online olarak web sitemizden veya mobil uygulamamızdan sorgulayabilirsiniz. Detaylı bilgi için lütfen fatura bölümünü ziyaret edin.",
+        "Fatura bilgilerinizi öğrenmek için web sitemizdeki fatura sorgulama bölümünü kullanabilir veya mobil uygulamamızı indirebilirsiniz."
+      ]
+    },
+    {
+      "tag": "outage",
+      "patterns": [
+        "Servis kesintisi",
+        "İnternet kesintisi",
+        "Hizmetinizde kesinti var mı?",
+        "İnternetim neden çalışmıyor?"
+      ],
+      "responses": [
+        "Bölgenizdeki servis kesintileri hakkında bilgi almak için web sitemizdeki duyurular bölümüne göz atabilirsiniz.",
+        "Şu anda bazı bölgelerde servis kesintisi yaşanıyor olabilir. Güncel durum hakkında bilgi almak için lütfen müşteri hizmetlerimizi arayın."
+      ]
+    },
+    {
+      "tag": "plan_upgrade",
+      "patterns": [
+        "Planımı nasıl yükseltebilirim?",
+        "Yükseltme seçenekleriniz neler?",
+        "Daha yüksek bir plana geçmek istiyorum",
+        "Plan yükseltme"
+      ],
+      "responses": [
+        "Planınızı yükseltmek için web sitemizdeki plan yükseltme bölümüne gidebilir veya müşteri hizmetlerimizi arayabilirsiniz.",
+        "Daha yüksek bir plana geçiş yapmak için size en yakın bayimize uğrayabilir veya müşteri hizmetlerimizi arayabilirsiniz."
+      ]
+    },
+    {
+      "tag": "new_customer",
+      "patterns": [
+        "Yeni müşteri olmak istiyorum",
+        "Abonelik başlatmak istiyorum",
+        "Yeni müşteri",
+        "Abonelik"
+      ],
+      "responses": [
+        "Yeni abonelik başlatmak için web sitemizden başvuru yapabilir veya en yakın bayimize uğrayabilirsiniz.",
+        "Yeni müşteri olmak için web sitemizden kolayca başvuru yapabilirsiniz. Detaylı bilgi için müşteri hizmetlerimizle iletişime geçebilirsiniz."
+      ]
+    },
+    {
+      "tag": "technical_support",
+      "patterns": [
+        "Teknik destek",
+        "Teknik sorun yaşıyorum",
+        "Bağlantı sorunları",
+        "Teknik yardım"
+      ],
+      "responses": [
+        "Teknik destek için 444 0 375 numaralı telefondan teknik ekibimizle iletişime geçebilirsiniz.",
+        "Bağlantı sorunları yaşıyorsanız, müşteri hizmetlerimizle iletişime geçerek teknik destek alabilirsiniz."
+      ]
+    },
+    {
+      "tag": "service_availability",
+      "patterns": [
+        "Hizmetleriniz hangi bölgelerde mevcut?",
+        "Bölgemde hizmetiniz var mı?",
+        "Hizmet alanlarınız nereler?",
+        "Hizmetleriniz nerede mevcut?"
+      ],
+      "responses": [
+        "Hizmetlerimizin mevcut olduğu bölgeleri öğrenmek için web sitemizdeki hizmet alanları bölümünü ziyaret edebilirsiniz.",
+        "Bölgemizde hizmetlerimizin mevcut olup olmadığını öğrenmek için müşteri hizmetlerimizle iletişime geçebilirsiniz."
+      ]
+    },
+    {
+      "tag": "payment_methods",
+      "patterns": [
+        "Ödeme yöntemleri nelerdir?",
+        "Nasıl ödeme yapabilirim?",
+        "Ödeme seçenekleriniz neler?",
+        "Fatura ödemesi nasıl yapılır?"
+      ],
+      "responses": [
+        "Ödemelerinizi kredi kartı, banka kartı veya mobil ödeme yöntemleriyle yapabilirsiniz. Detaylı bilgi için web sitemizi ziyaret edebilirsiniz.",
+        "Fatura ödemelerinizi web sitemizden, mobil uygulamamızdan veya anlaşmalı ödeme noktalarından yapabilirsiniz."
+      ]
+    },
+    {
+      "tag": "contract",
+      "patterns": [
+        "Sözleşme",
+        "Sözleşme süresi",
+        "Sözleşme şartları",
+        "Sözleşmemi nasıl iptal edebilirim?"
+      ],
+      "responses": [
+        "Sözleşme süreniz ve şartları hakkında bilgi almak için müşteri hizmetlerimizle iletişime geçebilirsiniz.",
+        "Sözleşme iptali için müşteri hizmetlerimizle iletişime geçerek detaylı bilgi alabilirsiniz."
+      ]
+    },
+    {
+      "tag": "international_roaming",
+      "patterns": [
+        "Yurtdışı roaming",
+        "Yurtdışı kullanım",
+        "Yurtdışında nasıl kullanabilirim?",
+        "Roaming ücretleri nelerdir?"
+      ],
+      "responses": [
+        "Yurtdışında telefonunuzu kullanabilmek için yurtdışı roaming hizmetimizden faydalanabilirsiniz. Detaylı bilgi ve ücretler için web sitemizi ziyaret edin.",
+        "Yurtdışı kullanım için roaming hizmetimiz aktif olmalıdır. Ücretler ve detaylar için müşteri hizmetlerimizle iletişime geçebilirsiniz."
+      ]
+    },
+    {
+      "tag": "account_management",
+      "patterns": [
+        "Hesap yönetimi",
+        "Hesap bilgileri",
+        "Hesap detaylarımı nasıl görebilirim?",
+        "Hesap bilgilerimi güncellemek istiyorum"
+      ],
+      "responses": [
+        "Hesap bilgilerinizi güncellemek ve yönetmek için web sitemizdeki hesap yönetimi bölümüne giriş yapabilirsiniz.",
+        "Hesap detaylarınızı görmek ve güncellemek için müşteri hizmetlerimizle iletişime geçebilirsiniz."
+      ]
+    },
+    {
+      "tag": "complaints",
+      "patterns": [
+        "Şikayet",
+        "Şikayette bulunmak istiyorum",
+        "Memnuniyetsizlik",
+        "Sorun bildirme"
+      ],
+      "responses": [
+        "Şikayetlerinizi ve memnuniyetsizliklerinizi bize iletmek için web sitemizdeki şikayet formunu doldurabilirsiniz.",
+        "Herhangi bir sorun bildirmek için müşteri hizmetlerimizle iletişime geçebilir veya web sitemizdeki şikayet formunu kullanabilirsiniz."
+      ]
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "Geri bildirim",
+        "Görüşlerim",
+        "Öneriler",
+        "Fikirlerim"
+      ],
+      "responses": [
+        "Geri bildirimlerinizi bizimle paylaşmak için web sitemizdeki geri bildirim formunu kullanabilirsiniz.",
+        "Öneri ve görüşlerinizi bize iletmek için müşteri hizmetlerimizle iletişime geçebilir veya web sitemizdeki geri bildirim formunu doldurabilirsiniz."
+      ]
+    }
+  ]
+}
