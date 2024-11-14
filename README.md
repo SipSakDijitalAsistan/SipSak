@@ -1,5 +1,8 @@
-# Implementation of a Contextual Chatbot in PyTorch.  
+# Şipşak Chatbot
+# Proje Demo Video
+Bu video projenin temel özelliklerini göstermektedir.
 
+[![Proje Demo Video](https://img.youtube.com/vi/HNwOaQil_8w/maxresdefault.jpg)](https://youtu.be/HNwOaQil_8w)
 ## Installation
 
 ### Create an environment
